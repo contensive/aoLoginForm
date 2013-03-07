@@ -72,16 +72,17 @@ Public Function GetContent(OptionString As String) As String
         '
         ' ----- Login form
         '
-        GetContent = GetContent & "<P>To login, enter your username and password.</P>"
         GetContent = GetContent & Main.GetLoginForm()
-        '
-        ' ----- Password Form
-        '
-        If kmaEncodeBoolean(Main.GetSiteProperty("AllowPasswordEmail", False)) Then
-            GetContent = GetContent & "<P>Forget your password? If you are a member of this site and can not remember your password, enter your email address below and we will email your matching username and password.</P>"
-            GetContent = GetContent & Main.GetSendPasswordForm()
-            End If
-        End If
+'        GetContent = GetContent & "<P>To login, enter your username and password.</P>"
+'        GetContent = GetContent & Main.GetLoginForm()
+'        '
+'        ' ----- Password Form
+'        '
+'        If kmaEncodeBoolean(Main.GetSiteProperty("AllowPasswordEmail", False)) Then
+'            GetContent = GetContent & "<P>Forget your password? If you are a member of this site and can not remember your password, enter your email address below and we will email your matching username and password.</P>"
+'            GetContent = GetContent & Main.GetSendPasswordForm()
+'            End If
+    End If
     'GetContent = Main.GetLoginGetContent()
     '
     Exit Function
