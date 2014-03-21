@@ -1,7 +1,6 @@
 Type=OleDll
-Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\Windows\system32\stdole2.tlb#OLE Automation
-Reference=*\G{5983FABA-531E-4B0E-B859-8EE6CFD7BE31}#22.1#0#..\..\..\..\..\..\Program Files\kma\Contensive\ccKrnl.exe#Contensive Kernel Services
-Reference=*\G{9D21E12F-C8A3-4943-8D6D-240204E986F7}#21.23#0#..\..\..\..\..\..\Program Files\kma\Contensive\ccWeb3.dll#Contensive Web Client 3
+Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\..\Windows\SysWOW64\stdole2.tlb#OLE Automation
+Reference=*\G{5983FABA-531E-4B0E-B859-8EE6CFD7BE31}#22.6#0#..\..\..\..\..\..\Program Files (x86)\kma\Contensive\ccKrnl.exe#Contensive Kernel Services
 Class=LoginClass; LoginClass.cls
 Class=LoginLinkClass; LoginLinkClass.cls
 Module=kmaCommonModule; ..\..\Release\kmaCommonModule.bas
