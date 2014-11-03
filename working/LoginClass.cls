@@ -74,7 +74,7 @@ Public Function GetContent(OptionString As String) As String
             End If
             Call Main.CloseCS(CS)
         End If
-        Link = ModifyQueryString(Main.refreshQueryString, "method", "logout")
+        Link = ModifyQueryString(Main.RefreshQueryString, "method", "logout")
         Link = Main.ServerPage & "?" & Link
         GetContent = GetContent & "<P>You are currently logged in as " & VisibleName & ". If this is not you, please <a href=""" & Link & """>click here</a>.</P>"
     ElseIf (Main.GetSiteProperty("BUILDVERSION", "") <= "4.1.562") Then
@@ -135,7 +135,7 @@ Friend Function GetLoginForm_Default() As String
                 ' temp workaround - eventually contensive needs to recognize the blank return
                 '
                 If Main.renderedpageId <> 0 Then
-                    Call Main.redirect("?" & Main.refreshQueryString)
+                    Call Main.redirect("?" & Main.RefreshQueryString)
                 End If
             End If
         End If
